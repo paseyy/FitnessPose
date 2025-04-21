@@ -9,7 +9,7 @@ We need to decide on the following specs:
 - Which augmentations do we want to make?
 - Framework setup and visualization
 
-## Ideas (Jakob)
+## Ideas
 - ViTPose: https://paperswithcode.com/paper/vitpose-vision-transformer-foundation-model
 - RTMW: https://paperswithcode.com/paper/rtmw-real-time-multi-person-2d-and-3d-whole
 - (2D skeleton seq -> Action recognition): https://paperswithcode.com/paper/revisiting-skeleton-based-action-recognition
