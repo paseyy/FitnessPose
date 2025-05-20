@@ -23,5 +23,5 @@ out["split"] = split
 annotations = correct["annotations"] + knees_error["annotations"] + elbows_error["annotations"]
 out["annotations"] = annotations
 
-with open('/home/pasey/Documents/DL/Project/FitnessPose/pickle_files/fitness-aqa.pkl', mode='wb') as f:
+with open('/pickle_files/fitness-aqa-wrong-framecounts.pkl', mode='wb') as f:
     pickle.dump(out, f)
