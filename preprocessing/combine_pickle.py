@@ -4,13 +4,13 @@ correct = {}
 elbows_error = {}
 knees_error = {}
 
-with open('/home/pasey/Documents/DL/Project/FitnessPose/pickle_files/correct.pkl', mode='rb') as f:
+with open('../pickle_files/correct.pkl', mode='rb') as f:
     correct = pickle.load(f)
 
-with open('/home/pasey/Documents/DL/Project/FitnessPose/pickle_files/knees_error.pkl', mode='rb') as f:
+with open('../pickle_files/knees_error.pkl', mode='rb') as f:
     knees_error = pickle.load(f)
 
-with open('/home/pasey/Documents/DL/Project/FitnessPose/pickle_files/elbows_error.pkl', mode='rb') as f:
+with open('../pickle_files/elbows_error.pkl', mode='rb') as f:
     elbows_error = pickle.load(f)
 
 out = {}
@@ -23,5 +23,5 @@ out["split"] = split
 annotations = correct["annotations"] + knees_error["annotations"] + elbows_error["annotations"]
 out["annotations"] = annotations
 
-with open('/home/pasey/Documents/DL/Project/FitnessPose/pickle_files/fitness-aqa-wrong-framecounts.pkl', mode='wb') as f:
+with open('../pickle_files/fitness-aqa-wrong-framecounts.pkl', mode='wb') as f:
     pickle.dump(out, f)

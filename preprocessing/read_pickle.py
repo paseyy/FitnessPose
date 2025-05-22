@@ -1,6 +1,6 @@
 import pickle
 
-with open("fitness-aqa.pkl", mode="rb") as f:
+with open("../pickle_files/fitness-aqa.pkl", mode="rb") as f:
     data = pickle.load(f)
 
     for entry in data["annotations"]:
