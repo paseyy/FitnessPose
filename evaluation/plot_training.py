@@ -36,8 +36,8 @@ def load_training_data(log_file):
 
 def plot_training(data, metric="loss"):
     model_name = re.split(r"[\\/]", args[1])[1]
-    layers_frozen = 1
-    lr = 0.01
+    layers_frozen = 0
+    lr = 0.001
     momentum = 0.9
     weight_decay = 0.0003
 
