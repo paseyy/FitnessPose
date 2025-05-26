@@ -1,5 +1,5 @@
 import pickle
 
-with open("fitness-aqa.pkl", mode="rb") as f:
-    dict = pickle.load(f)
+with open("../pickle_files/fitness-aqa-full.pkl", mode="rb") as f:
+    data = pickle.load(f)
     pass
