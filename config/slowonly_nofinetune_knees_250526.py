@@ -148,6 +148,6 @@ evaluation = dict(
     topk=1)
 log_config = dict(interval=50, hooks=[dict(type='TextLoggerHook')])
 log_level = 'INFO'
-work_dir = './work_dirs/fitnesspose_250525'
+work_dir = './work_dirs/fitnesspose_250526'
 dist_params = dict(backend='nccl')
 gpu_ids = range(0, 1)
