@@ -173,3 +173,9 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
+pickle_files/fitness-aqa-elbows-full.pkl
+pickle_files/fitness-aqa-knees-full.pkl
+pickle_files/fitness-aqa-wrong-framecounts-full.pkl
+pickle_files/fitness-aqa-full.pkl
+pickle_files/fitness-aqa-wrong-framecounts.pkl
+
