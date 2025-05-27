@@ -11,7 +11,7 @@ def load_training_data(log_file):
                "train_top1_acc": [],
                "val_top1_acc": []}
 
-    for line in f:
+    for line in log_file:
         iteration_data = json.loads(line)
         try:
             mode = iteration_data["mode"]
@@ -36,9 +36,9 @@ def load_training_data(log_file):
 
 def plot_training(data, metric="loss"):
     model_name = re.split(r"[\\/]", args[1])[1]
-    layers_frozen = 0
+    layers_frozen = 1
     lr = 0.001
-    momentum = 0.9
+    momentum = None
     weight_decay = 0.0003
 
     title = (model_name + "\ntrained with\n"
