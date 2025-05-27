@@ -1,11 +1,3 @@
-2025-05-27 03:14:44,468 - pyskl - INFO - 215 videos remain after valid thresholding
-2025-05-27 03:17:04,233 - pyskl - INFO - Testing results of the last checkpoint
-2025-05-27 03:17:04,243 - pyskl - INFO - top1_acc: 0.9209
-2025-05-27 03:17:04,244 - pyskl - INFO - mean_class_accuracy: 0.8881
-2025-05-27 03:17:04,244 - pyskl - INFO - loss: 0.4411
-2025-05-27 03:17:04,244 - pyskl - INFO - confusion_matrix:
-[[145.   4.]
- [ 13.  53.]]
 2025-05-27 03:17:04,249 - pyskl - INFO - load checkpoint from local path: ./work_dirs/fitnesspose_250526/best_top1_acc_epoch_92.pth
 2025-05-27 03:19:18,698 - pyskl - INFO - Testing results of the best checkpoint
 2025-05-27 03:19:18,699 - pyskl - INFO - top1_acc: 0.9163
