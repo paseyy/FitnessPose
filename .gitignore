@@ -179,3 +179,10 @@ pickle_files/fitness-aqa-wrong-framecounts-full.pkl
 pickle_files/fitness-aqa-full.pkl
 pickle_files/fitness-aqa-wrong-framecounts.pkl
 
+/pickle_files/correct_track.pkl
+/pickle_files/elbows_error_track.pkl
+/pickle_files/fitness-aqa-elbows-track.pkl
+/pickle_files/fitness-aqa-knees-track.pkl
+/pickle_files/fitness-aqa-track.pkl
+/pickle_files/fitness-aqa-wrong-framecounts-track.pkl
+/pickle_files/knees_error_track.pkl
