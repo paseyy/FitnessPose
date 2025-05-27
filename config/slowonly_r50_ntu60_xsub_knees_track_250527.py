@@ -12,7 +12,7 @@ model = dict(
         inflate=(0, 1, 1),
         spatial_strides=(2, 2, 2),
         temporal_strides=(1, 1, 2),
-        frozen_stages=1),
+        frozen_stages=0),
     cls_head=dict(
         type='I3DHead',
         in_channels=512,
@@ -67,7 +67,7 @@ data = dict(
     test_dataloader=dict(videos_per_gpu=1),
     train=dict(
         type='RepeatDataset',
-        times=2,
+        times=3,
         dataset=dict(type=dataset_type, ann_file=ann_file, split='train', pipeline=train_pipeline)),
     val=dict(type=dataset_type, ann_file=ann_file, split='val', pipeline=val_pipeline),
     test=dict(type=dataset_type, ann_file=ann_file, split='test', pipeline=test_pipeline)
@@ -87,7 +87,7 @@ evaluation = dict(
     topk=1)
 log_config = dict(interval=50, hooks=[dict(type='TextLoggerHook')])
 log_level = 'INFO'
-work_dir = './work_dirs/slowonly_r50_ntu60_xsub_knees_interp_250527'
+work_dir = './work_dirs/slowonly_r50_ntu60_xsub_knees_track_250527'
 dist_params = dict(backend='nccl')
 gpu_ids = range(0, 1)
 load_from = './configs/fitnesspose/slowonly_r50_ntu60_xsub.pth'
