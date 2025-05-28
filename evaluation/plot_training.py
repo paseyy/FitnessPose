@@ -36,16 +36,16 @@ def load_training_data(log_file):
 
 def plot_training(data, metric="loss"):
     model_name = re.split(r"[\\/]", args[1])[1]
-    layers_frozen = 1
+    stages_frozen = 0
     lr = 0.001
     momentum = None
-    weight_decay = 0.0003
+    weight_decay = 0.001
 
     title = (model_name + "\ntrained with\n"
              f"lr = {lr}\n"
              f"momentum = {momentum}\n"
              f"weight_decay = {weight_decay}\n"
-             f"{layers_frozen} frozen layers\n")
+             f"{stages_frozen} frozen stages\n")
 
     fig, ax = plt.subplots(figsize=(10,8))
     ax.plot(data["train_" + metric], label="train")
